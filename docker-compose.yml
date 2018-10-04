@@ -20,7 +20,7 @@ services:
       - "SECRET_TOKEN=${SECRET_TOKEN}"
       - "SMTP_HOST=${SMTP_HOST}"
       - "SMTP_USER=${SMTP_USER}"
-      - "SMTP_HOST=${SMTP_HOST}"
+      - "SMTP_PASSWORD=${SMTP_PASSWORD}"
       - "FROM_ACCOUNT=${FROM_ACCOUNT}"
     volumes:
       - "${FILES}:/usr/src/app/files"
