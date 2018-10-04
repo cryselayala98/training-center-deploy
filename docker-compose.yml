@@ -21,7 +21,7 @@ services:
       - "SMTP_HOST=${SMTP_HOST}"
       - "SMTP_USER=${SMTP_USER}"
       - "SMTP_HOST=${SMTP_HOST}"
-      - "SMTP_ACCOUNT=${SMTP_ACCOUNT}"
+      - "FROM_ACCOUNT=${FROM_ACCOUNT}"
     volumes:
       - "${FILES}:/usr/src/app/files"
       - "/var/run/docker.sock:/var/run/docker.sock"
