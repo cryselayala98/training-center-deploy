@@ -22,6 +22,8 @@ services:
       - "SMTP_USER=${SMTP_USER}"
       - "SMTP_PASSWORD=${SMTP_PASSWORD}"
       - "FROM_ACCOUNT=${FROM_ACCOUNT}"
+      - "SMTP_SERVICE=${SMTP_SERVICE}"
+      - "SMTP_PORT=${SMTP_PORT}"
     volumes:
       - "${FILES}:/usr/src/app/files"
       - "/var/run/docker.sock:/var/run/docker.sock"
