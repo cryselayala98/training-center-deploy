@@ -12,3 +12,5 @@ MAINTAINER MELISSA DELGADO
 
 # Copy files to container
 COPY . /usr/share/nginx/html
+RUN rm /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx
