@@ -14,3 +14,7 @@ MAINTAINER MELISSA DELGADO
 COPY . /usr/share/nginx/html
 RUN rm /etc/nginx/nginx.conf
 COPY nginx.conf /etc/nginx
+RUN rm /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d
+RUN rm /usr/share/nginx/html/nginx.conf
+RUN rm /usr/share/nginx/html/default.conf
