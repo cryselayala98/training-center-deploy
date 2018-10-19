@@ -28,6 +28,14 @@ Crear un archivo .env y configurar las siguientes variables:
 - FRONTEND_PORT: Puerto que se utilizara para exponer el frontend en el servidor.
 - BACKEND_PORT: Puerto que se utilizara para exponer el backend en el servidor.
 - DATABASE_URL: String para la conexión a la base de datos en el siguiente formato mysql://<username>:<password>@<host>/<database>?reconnect=true
+- NODE_ENV: Para producción, 'production'.
+- SECRET_TOKEN: Token secreto de la aplicación.
+- SMTP_HOST: Servidor de emails.
+- SMTP_USER: Nombre de usuario en el servidor de email.
+- SMTP_PASSWORD: Contraseña del servidor de email.
+- FROM_ACCOUNT: Email desde el que se enviarán los correos (se recomienda el mismo SMTP_USER).
+- SMTP_SERVICE: Nombre del servicio integrado por nodemailer para enviar mails.
+- SMTP_PORT: Puerto de la conexión de email.
 
 ## Ejecutar los contenedores
 
