@@ -3,7 +3,7 @@ env('.env')
 
 module.exports = {
     development: {        
-        url: 'mysql://root:root@127.0.0.1:3306/development',
+        url: process.env.DATABASE_URL,
         dialect: 'mysql'
     },
     production: {
@@ -11,7 +11,7 @@ module.exports = {
         dialect: 'mysql',
     },
     test: {
-        url: 'mysql://root:root@127.0.0.1:3306/test',
+        url: '',
         dialect: "mysql"
     },
     SECRET_TOKEN: process.env.SECRET_TOKEN
