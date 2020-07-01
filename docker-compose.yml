@@ -30,20 +30,9 @@ services:
     ports:
       - "${BACKEND_PORT}:8080"
     depends_on:
-      - db
       - cpp
       - java
       - python
-    
-  db:
-    image: "mariadb:10.2"
-    restart: "always"
-    environment:
-      - "MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}"
-      - "MYSQL_DATABASE=development"
-    container_name: "mariaDB"
-    ports:
-      - "${DATABASE_PORT}:3306"
 
   cpp:
     build: "grading/cpp"
