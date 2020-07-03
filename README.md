@@ -39,7 +39,7 @@ Crear un archivo .env y configurar las siguientes variables:
 
 ## Configurar nginx
 
-En el directorio nginx-proxy-sites se proporcionan las configuraciones de nginx usando proxy reverse, ocultando los puertos del frontend y el backend. Una vez se configure nginx debe usarse Certbot u otro mecanismo para configurar HTTPS.
+En el directorio nginx-proxy-sites se proporcionan las configuraciones de [nginx](https://www.nginx.com/) usando proxy reverse, ocultando los puertos del frontend y el backend. Una vez se configure nginx debe usarse [Certbot](https://certbot.eff.org/) u otro mecanismo para configurar HTTPS.
 
 ## Ejecutar los contenedores
 
