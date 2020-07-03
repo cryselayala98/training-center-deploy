@@ -94,6 +94,6 @@ docker exec -it training-center-backend /bin/bash
 
 Este proyecto fue construido con mucho :heart: y Javascript por [Melissa](https://github.com/Meyito) y [Gerson](https://github.com/GersonLazaro)
 
-Este proyecto se sigue manteniendo desde el Semillero SILUX y Grupo de Programación Competitiva de la [UFPS]https://ww2.ufps.edu.co/), tambien con mucho :heart:
+Este proyecto se sigue manteniendo desde el Semillero SILUX y Grupo de Programación Competitiva de la [UFPS](https://ww2.ufps.edu.co/), tambien con mucho :heart:
 
-Última actualización 2020/07/03 por [Milton Jesús Vera Contreras] (https://miljeveco.contently.com/)
+Última actualización 2020/07/03 por [Milton Jesús Vera Contreras](https://miljeveco.contently.com/)
