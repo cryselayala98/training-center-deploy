@@ -37,6 +37,8 @@ Crear un archivo .env y configurar las siguientes variables:
 - SMTP_SERVICE: Nombre del servicio integrado por nodemailer para enviar mails.
 - SMTP_PORT: Puerto de la conexión de email.
 
+Se proporciona un ejemplo de .env
+
 ## Configurar nginx
 
 En el directorio nginx-proxy-sites se proporcionan las configuraciones de [nginx](https://www.nginx.com/) usando proxy reverse, ocultando los puertos del frontend y el backend. Una vez se configure nginx debe usarse [Certbot](https://certbot.eff.org/) u otro mecanismo para configurar HTTPS.
