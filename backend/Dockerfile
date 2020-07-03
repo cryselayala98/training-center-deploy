@@ -34,14 +34,14 @@ COPY package*.json ./
 RUN npm install --only=production
 
 #Define environment variables
-ENV PORT 8080
+ENV PORT 8081
 ENV DEBUG *
 
 # Bundle app source
 COPY . .
 
 #Expose container port
-EXPOSE 8080
+EXPOSE 8081
 
 #Volumes
 VOLUME /files 
