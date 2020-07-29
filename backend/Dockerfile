@@ -10,8 +10,12 @@ FROM node:carbon
 MAINTAINER GERSON LAZARO
 MAINTAINER MELISSA DELGADO
 
+#RUN cp -r files /usr/src/app
+
 # Create app directory
 WORKDIR /usr/src/app
+
+#RUN cp -r files /usr/src/app
 
 # Install docker CE
 RUN apt-get update && \
@@ -34,14 +38,14 @@ COPY package*.json ./
 RUN npm install --only=production
 
 #Define environment variables
-ENV PORT 8080
+ENV PORT 8081
 ENV DEBUG *
 
 # Bundle app source
 COPY . .
 
 #Expose container port
-EXPOSE 8080
+EXPOSE 8081
 
 #Volumes
 VOLUME /files 
