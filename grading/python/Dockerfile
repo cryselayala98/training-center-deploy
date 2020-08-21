@@ -1,11 +1,11 @@
-#-------------------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 # Grading for python code                                                       #
 # Based on Ubuntu 16.04                                                         #
 #-------------------------------------------------------------------------------#
 
 
 # Pull base image
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 # Container Basic Info 
 MAINTAINER GERSON LAZARO
@@ -17,9 +17,8 @@ RUN apt-get -y clean
 RUN apt-get install -f
 
 # Install the language/compiler
-RUN apt-get install -y python
+RUN apt-get install -y python3
 
 # Install utils
 RUN apt-get install -y sudo
 RUN apt-get install -y bc
-

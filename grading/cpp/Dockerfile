@@ -1,11 +1,11 @@
-#-------------------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
 # Grading for c++ code                                                          #
 # Based on Ubuntu 16.04                                                         #
 #-------------------------------------------------------------------------------#
 
 
 # Pull base image
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
 # Container Basic Info 
 MAINTAINER GERSON LAZARO
@@ -24,5 +24,4 @@ RUN apt-get install -qqy --no-install-recommends build-essential
 RUN apt-get install -y sudo
 RUN apt-get install -y bc
 
-VOLUME /files 
-
+VOLUME /files
