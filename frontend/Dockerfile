@@ -1,29 +1,32 @@
-#-------------------------------------------------------------------------------#
-# Frontend for UFPS Training Center                                             #
-# Based on Alpine linux                                                         #
-#-------------------------------------------------------------------------------#
+FROM node:14.8.0-alpine
 
-# Pull base image
-FROM nginx:alpine
+# install git
+RUN apk add --update git
 
-# Container Basic Info 
-MAINTAINER GERSON LAZARO
-MAINTAINER MELISSA DELGADO
+# install aurelia-cli to build the app & http-server to serve static contents
+#RUN npm i -g http-server
+RUN npm i -g aurelia-cli
+  
+# set working directory to app
+# henceforth all commands will run inside this folder
+WORKDIR /app
+  
+# copy package.json related files first and install all required dependencies
+COPY package*.json ./
 
-# Copy files to container
-COPY trainingcenter2020.tk /etc/nginx/site-available
+# Try running install with --unsafe-perm option. When running as root, npm won't run any scripts.
 
-COPY . /usr/share/nginx/html
-RUN rm /etc/nginx/nginx.conf
-COPY nginx.conf /etc/nginx
-RUN rm /etc/nginx/conf.d/default.conf
-COPY default.conf /etc/nginx/conf.d
-RUN rm /usr/share/nginx/html/nginx.conf
-RUN rm /usr/share/nginx/html/default.conf
+RUN npm install typings -g  
+RUN npm install 
 
-RUN ln -s /etc/nginx/sites-available/trainingcenter2020.tk /etc/nginx/sites-enabled
-#RUN rm/usr/share/nginx/html/trainingcenter2020.tk
+# copy the rest of the files and folders & install dependencies
+COPY . ./
+RUN au build
+  
+# by default http-server will serve contents on port 9000
+# so we expose this port to host machine
+EXPOSE 9000
+  
+CMD [ "au" , "run" ]
 
-EXPOSE 80
 
-CMD ["nginx","-g","daemon off;"]
