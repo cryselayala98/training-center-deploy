@@ -4,8 +4,6 @@ services:
     build: "frontend"
     image: "frontend"
     container_name: "training-center-frontend"
-    volumes:
-      - "./frontend:/app"
     ports:
       - "${FRONTEND_PORT}:9000"
     depends_on:
@@ -29,7 +27,6 @@ services:
     volumes:
       - "${FILES}:/usr/src/app/files"
       - "/var/run/docker.sock:/var/run/docker.sock"
-      - "./backend:/usr/src/app"
     ports:
       - "${BACKEND_PORT}:8081"
     depends_on:
