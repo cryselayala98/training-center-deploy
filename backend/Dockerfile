@@ -10,12 +10,8 @@ FROM node:carbon
 MAINTAINER GERSON LAZARO
 MAINTAINER MELISSA DELGADO
 
-#RUN cp -r files /usr/src/app
-
 # Create app directory
 WORKDIR /usr/src/app
-
-#RUN cp -r files /usr/src/app
 
 # Install docker CE
 RUN apt-get update && \
@@ -35,7 +31,7 @@ RUN apt-get update && \
 
 # Install app dependencies
 COPY package*.json ./
-RUN npm install --only=production
+RUN npm install
 
 #Define environment variables
 ENV PORT 8081
