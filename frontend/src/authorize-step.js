@@ -48,7 +48,7 @@ export class AuthorizeStep {
       }
     }
     if (this.authService.isVisitor()) {
-      return next.cancel(new Redirect('iniciar-sesion'))
+      return next.cancel(new Redirect('home')) //cambie aqui iniciar-sesion
     } else {
       return next.cancel(new Redirect(''))
     }

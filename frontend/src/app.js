@@ -42,6 +42,17 @@ export class App {
         route: '',
         redirect: 'problemas'
       },
+      //Home --->NUEVOO
+      {
+        name: 'home',
+        route: 'home',
+        moduleId: './modules/home/home',
+        title: 'Inicio',
+        layoutView: './layouts/not-logged.html',
+        settings: {
+          roles: ['visitor']
+        } 
+      }
       // Login
       {
         name: 'login',
