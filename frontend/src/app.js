@@ -47,8 +47,8 @@ export class App {
         name: "home",
         route: "home",
         moduleId: "./modules/home/home",
-        title: "Inicio",
-        layoutView: "./layouts/not-logged.html",
+        title: "Bienvenidos a Training Center",
+        //layoutView: "./layouts/not-logged.html",
         settings: {
           roles: ["visitor"]
         }
