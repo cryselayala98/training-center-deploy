@@ -167,6 +167,6 @@
 }
 
 .divRegis {
-  background-image: url("backgroundTC.png");
+  background-image: url(src/assets/backgroundTC.png);
   margin: 0;
 }
