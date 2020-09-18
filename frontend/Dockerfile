@@ -21,6 +21,9 @@ RUN npm install
 
 # copy the rest of the files and folders & install dependencies
 COPY . ./
+
+VOLUME /frontend
+
 RUN au build
   
 # by default http-server will serve contents on port 9000
