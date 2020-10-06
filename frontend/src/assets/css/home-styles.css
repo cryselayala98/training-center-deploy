@@ -23,7 +23,7 @@
 
 .title {
   color: white;
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   font-size: 2em;
   padding-left: 0.5em;
   padding-top: 0.3em;
@@ -124,7 +124,7 @@
 .interes {
   text-align: center;
   color: white;
-  font-family: "Jockey One", sans-serif;
+  font-family: 'Jockey One', sans-serif;
   margin-top: 1em;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -137,7 +137,7 @@
 .novedades {
   text-align: center;
   color: black;
-  font-family: "Jockey One", sans-serif;
+  font-family: 'Jockey One', sans-serif;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -149,7 +149,7 @@
 }
 
 .page-footer h5 {
-  font-family: "Spectral", serif;
+  font-family: 'Spectral', serif;
 }
 
 .divLinea {
@@ -167,6 +167,6 @@
 }
 
 .divRegis {
-  background-image: url(src/assets/backgroundTC.png);
+  background-image: url("backgroundTC.png");
   margin: 0;
 }
