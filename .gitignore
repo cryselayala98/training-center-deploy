@@ -1,3 +1,5 @@
 .env
 /files/
 npm-debug.log
+update-repo.sh
+/frontend/src/assets/img
