@@ -1,5 +1,6 @@
 import { Auth, Http } from "services/services";
 import { AuthorizeStep } from "./authorize-step";
+import 'bootstrap';
 
 /**
  * App (Main Module)
