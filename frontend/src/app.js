@@ -55,6 +55,17 @@ export class App {
       },
       // Login
       {
+        name: "principal",
+        route: "principal",
+        moduleId: "./modules/principal/principal",
+        title: "Principal",
+        layoutView: "./layouts/not-logged.html",
+        settings: {
+          roles: ["visitor"]
+        }
+      },
+      // Login
+      {
         name: "login",
         route: "iniciar-sesion",
         moduleId: "./modules/login/login",
