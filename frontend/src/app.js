@@ -42,13 +42,22 @@ export class App {
                 route: "",
                 redirect: "problemas"
             },
-            // Home
             {
                 name: "home",
                 route: "bienvenido",
                 moduleId: "./modules/home/home",
                 title: "Bienvenidos a Training Center",
-                //layoutView: "./layouts/not-logged.html",
+                settings: {
+                    roles: ["visitor"]
+                }
+            },
+            // Principal
+            {
+                name: "principal",
+                route: "principal",
+                moduleId: "./modules/principal/principal",
+                title: "Principal",
+                layoutView: "./layouts/not-logged.html",
                 settings: {
                     roles: ["visitor"]
                 }
@@ -244,7 +253,6 @@ export class App {
         };
 
         config.mapUnknownRoutes(handleUnknownRoutes);
-
         this.router = router;
     }
 }
