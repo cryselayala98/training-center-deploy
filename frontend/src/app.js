@@ -8,7 +8,6 @@ import { AuthorizeStep } from "./authorize-step";
  * @class App
  */
 export class App {
-<<<<<<< HEAD
     /**
      * Método que realiza inyección de las dependencias necesarias en el módulo.
      * Estas dependencias son cargadas bajo el patrón de diseño singleton.
