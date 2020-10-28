@@ -1,35 +1,31 @@
-FROM node:14.8.0-alpine
+#-------------------------------------------------------------------------------#
+# Frontend for UFPS Training Center                                             #
+# Based on Alpine linux                                                         #
+#-------------------------------------------------------------------------------#
 
-# install git
-RUN apk add --update git
+# Pull base image
+FROM nginx:alpine
 
-# install aurelia-cli to build the app & http-server to serve static contents
-#RUN npm i -g http-server
-RUN npm i -g aurelia-cli
-  
-# set working directory to app
-# henceforth all commands will run inside this folder
-WORKDIR /app
-  
-# copy package.json related files first and install all required dependencies
-COPY package*.json ./
+# Container Basic Info 
+MAINTAINER GERSON LAZARO
+MAINTAINER MELISSA DELGADO
 
-# Try running install with --unsafe-perm option. When running as root, npm won't run any scripts.
+# Copy files to container
+# COPY . /usr/share/nginx/html
 
-RUN npm install typings -g  
-RUN npm install 
+# setting up nginx
 
-# copy the rest of the files and folders & install dependencies
-COPY . ./
+# agregando config de nginx
+RUN rm /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx
 
-VOLUME /frontend
+RUN rm /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d
 
-RUN au build
-  
-# by default http-server will serve contents on port 9000
-# so we expose this port to host machine
-EXPOSE 9000
-  
-CMD [ "au" , "run" ]
+WORKDIR /usr/share/nginx/html
 
-
+# Copiando los archivos necesarios, lo que no haya sido copuado mediante este archivo se ha declarado como volumen de este container
+COPY src/assets/img /src/assets/img
+COPY bootstrap/fonts /bootstrap/fonts
+COPY browserconfig.xml .
+COPY manifest.json .
