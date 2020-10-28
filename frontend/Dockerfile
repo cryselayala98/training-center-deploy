@@ -24,7 +24,7 @@ COPY default.conf /etc/nginx/conf.d
 
 WORKDIR /usr/share/nginx/html
 
-# Copiando los archivos necesarios, lo que no haya sido copuado mediante este archivo se ha declarado como volumen de este container
+# Copiando los archivos necesarios, lo que no haya sido copiado mediante este archivo se ha declarado como volumen de este container
 COPY src/assets/img /src/assets/img
 COPY bootstrap/fonts /bootstrap/fonts
 COPY browserconfig.xml .
