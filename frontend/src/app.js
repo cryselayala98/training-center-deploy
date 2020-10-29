@@ -1,3 +1,4 @@
+import 'bootstrap';
 import { Auth, Http } from "services/services";
 import { AuthorizeStep } from "./authorize-step";
 
