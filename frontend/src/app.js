@@ -1,4 +1,4 @@
-import 'bootstrap';
+import "bootstrap";
 import { Auth, Http } from "services/services";
 import { AuthorizeStep } from "./authorize-step";
 
@@ -59,10 +59,10 @@ export class App {
         name: "principal",
         route: "principal",
         moduleId: "./modules/principal/principal",
-        title: "Principal",
-        layoutView: "./layouts/not-logged.html",
+        layoutView: "./layouts/logged.html",
+        nav: true,
         settings: {
-          roles: ["visitor"]
+          roles: ["admin", "coach", "student"]
         }
       },
       // Login
