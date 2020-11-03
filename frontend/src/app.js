@@ -54,17 +54,7 @@ export class App {
           roles: ["visitor"]
         }
       },
-      // Principal
-      {
-        name: "principal",
-        route: "principal",
-        moduleId: "./modules/principal/principal",
-        layoutView: "./layouts/logged.html",
-        nav: true,
-        settings: {
-          roles: ["admin", "coach", "student"]
-        }
-      },
+     
       // Login
       {
         name: "login",
@@ -118,6 +108,17 @@ export class App {
         layoutView: "./layouts/logged.html",
         nav: true,
         href: "/buscar/+",
+        settings: {
+          roles: ["admin", "coach", "student"]
+        }
+      },
+       // Principal
+       {
+        name: "principal",
+        route: "principal",
+        moduleId: "./modules/principal/principal",
+        layoutView: "./layouts/logged.html",
+        nav: true,
         settings: {
           roles: ["admin", "coach", "student"]
         }
