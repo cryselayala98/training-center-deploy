@@ -9,6 +9,6 @@ const auth = require("../middlewares/auth");
  * Handler for '/contests' routes
  */
 
-principal.get("/:princiapl", auth.isAuth, userCtrl.getSubmission);
+principal.get("/:principal", auth.isAuth);
 
 module.exports = principal;
