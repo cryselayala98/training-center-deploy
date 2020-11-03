@@ -12,6 +12,8 @@ const assignments = require('../routes/assignments')
 const contests = require('../routes/contests')
 const submissions = require('../routes/submissions')
 
+const principal = require('../routes/principal')
+
 const auth = require('../middlewares/auth')
 const authCtrl = require('../controllers/auth')
 const userCtrl = require('../controllers/users')
