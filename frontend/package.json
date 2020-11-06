@@ -17,7 +17,6 @@
     "bluebird": "^3.4.1",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
-    "jsdom": "^16.4.0",
     "nprogress": "^0.2.0",
     "requirejs": "^2.3.2",
     "showdown": "^1.6.4",
