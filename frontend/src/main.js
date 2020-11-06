@@ -3,8 +3,8 @@ import 'fetch'
 
 // Configure Bluebird Promises.
 Promise.config({
-  longStackTraces: environment.debug,
-  warnings: false
+    longStackTraces: environment.debug,
+    warnings: false
 })
 
 /**
@@ -12,22 +12,22 @@ Promise.config({
  * @export
  * @param {any} aurelia - Core del framework
  */
-export function configure (aurelia) {
-  aurelia.use
-    .standardConfiguration()
-    .feature('resources')
-    .plugin('aurelia-notify', settings => {
-      settings.timeout = 40000
-      settings.limit = 1
-    })
-  aurelia.use.plugin('aurelia-chart')
-  if (environment.debug) {
-    aurelia.use.developmentLogging()
-  }
+export function configure(aurelia) {
+    aurelia.use
+        .standardConfiguration()
+        .feature('resources')
+        .plugin('aurelia-notify', settings => {
+            settings.timeout = 40000
+            settings.limit = 1
+        })
+    aurelia.use.plugin('aurelia-chart')
+    if (environment.debug) {
+        aurelia.use.developmentLogging()
+    }
 
-  if (environment.testing) {
-    aurelia.use.plugin('aurelia-testing')
-  }
+    if (environment.testing) {
+        aurelia.use.plugin('aurelia-testing')
+    }
 
-  aurelia.start().then(() => aurelia.setRoot())
+    aurelia.start().then(() => aurelia.setRoot())
 }

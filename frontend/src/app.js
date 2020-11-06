@@ -129,7 +129,7 @@ export class App {
                 layoutView: "./layouts/logged.html",
                 nav: true,
                 settings: {
-                    roles: ["admin", "coach", "student", "visitor"]
+                    roles: ["admin", "coach", "student"]
                 }
             },
             // Ranking

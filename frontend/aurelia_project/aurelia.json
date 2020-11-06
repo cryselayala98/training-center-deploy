@@ -38,6 +38,8 @@
         "source": "test/unit/**/*.js"
     },
     "paths": {
+
+        "blockly": "../node_modules/blockly",
         "root": "src",
         "resources": "resources",
         "elements": "resources/elements",
@@ -190,12 +192,6 @@
                             "attributes/chart-attribute.js",
                             "observers/model-observer.js"
                         ]
-                    },
-                    {
-                        "name": "blockly",
-                        "path": "../node_modules/blockly",
-                        "main": "blockly_compressed",
-                        "exports": "$"
                     },
                     "showdown"
                 ]
