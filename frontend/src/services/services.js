@@ -12,7 +12,6 @@
  * @exports Problems (Service) - Servicio para el manejo de problemas y categorías
  * @exports Ranking (Service) - Servicio para la obtención del ranking
  * @exports Syllabuses (Service) - Servicio para el manejo de syllabus
- * @exports Blockly Custom (Service) - Servicio para el manejo del editor de soluciones con lenguaje de bloques personalizados
  */
 export * from './alert'
 export * from './auth'
@@ -24,4 +23,3 @@ export * from './materials'
 export * from './problems'
 export * from './rankings'
 export * from './syllabuses'
-export * from './blockly-custom'
