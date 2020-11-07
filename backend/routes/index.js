@@ -24,6 +24,7 @@ const userCtrl = require('../controllers/users')
 
 router.use('/users', users)
 router.use('/categories', categories)
+router.use('/principal', principal) /*- se agrego 07/11*/
 router.use('/problems', problems)
 router.use('/materials', materials)
 router.use('/syllabus', syllabuses)
