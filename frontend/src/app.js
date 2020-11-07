@@ -47,14 +47,14 @@ export class App {
       {
         name: "home",
         route: "bienvenido",
-        moduleId: "./modules/home/home",
+        moduleId: "./modules/principal/principal",
         title: "Bienvenidos a Training Center",
         //layoutView: "./layouts/not-logged.html",
         settings: {
           roles: ["visitor"]
         }
       },
-     
+
       // Login
       {
         name: "login",
@@ -112,8 +112,8 @@ export class App {
           roles: ["admin", "coach", "student"]
         }
       },
-       // Principal
-       {
+      // Principal
+      {
         name: "principal",
         route: "principal",
         moduleId: "./modules/principal/principal",
