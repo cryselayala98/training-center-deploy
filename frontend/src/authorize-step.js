@@ -67,7 +67,7 @@ export class AuthorizeStep {
       }
     }
     if (this.authService.isVisitor()) {
-      return next.cancel(new Redirect("bienvenido"));
+      return next.cancel(new Redirect("principal"));
     } else {
       return next.cancel(new Redirect(""));
     }
