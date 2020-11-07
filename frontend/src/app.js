@@ -46,7 +46,7 @@ export class App {
       //Home --->NUEVOO
       {
         name: "home",
-        route: "bienvenido",
+        route: "principal",
         moduleId: "./modules/principal/principal",
         title: "Bienvenidos a Training Center",
         //layoutView: "./layouts/not-logged.html",
