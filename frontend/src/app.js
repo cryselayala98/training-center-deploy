@@ -47,7 +47,7 @@ export class App {
       {
         name: "home",
         route: "bienvenido",
-        moduleId: "./modules/bienvenido/bienvenido",
+        moduleId: "./modules/home/home",
         title: "Bienvenidos a Training Center",
         //layoutView: "./layouts/not-logged.html",
         settings: {
