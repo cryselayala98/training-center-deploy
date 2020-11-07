@@ -1,6 +1,9 @@
 <template>
   <require from="../../../resources/elements/filter"></require>
   <require from="../../../resources/elements/paginator"></require>
+  <div class="content">
+    <router-view></router-view>
+  </div>
   <div slot="content" class="body-slot">
     <div class="container" if.bind="authService.isCoach() || authService.isStudent()">
       <div class="container">    
