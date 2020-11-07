@@ -45,9 +45,9 @@ export class App {
       },
       //Home --->NUEVOO
       {
-        name: "principal",
-        route: "principal",
-        moduleId: "./modules/principal/principal",
+        name: "home",
+        route: "bienvenido",
+        moduleId: "./modules/bienvenido/bienvenido",
         title: "Bienvenidos a Training Center",
         //layoutView: "./layouts/not-logged.html",
         settings: {
