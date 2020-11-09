@@ -117,10 +117,10 @@ export class App {
         name: "principal",
         route: "principal",
         moduleId: "./modules/principal/principal",
-        layoutView: "./layouts/logged.html",
+        layoutView: "./layouts/not-logged.html",
         nav: true,
         settings: {
-          roles: ["admin", "coach", "student"]
+          roles: ["visitor"]
         }
       },
       // Problems
