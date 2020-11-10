@@ -99,6 +99,17 @@ export class App {
           roles: ["visitor"]
         }
       },
+      // Principal
+      {
+        name: "principal",
+        route: "principal",
+        moduleId: "./modules/principal/principal",
+        layoutView: "./layouts/not-logged.html",
+        nav: true,
+        settings: {
+          roles: ["visitor"]
+        }
+      },
       // Reset Password
       {
         name: "search",
@@ -112,17 +123,7 @@ export class App {
           roles: ["admin", "coach", "student"]
         }
       },
-      // Principal
-      {
-        name: "principal",
-        route: "principal",
-        moduleId: "./modules/principal/principal",
-        layoutView: "./layouts/not-logged.html",
-        nav: true,
-        settings: {
-          roles: ["visitor"]
-        }
-      },
+
       // Problems
       {
         name: "problems",
