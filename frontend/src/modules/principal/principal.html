@@ -3,7 +3,7 @@
   <require from="../../../resources/elements/paginator"></require>
   <div slot="content" class="body-slot">
       <router-view></router-view>
-    <div class="container" if.bind="authService.isCoach() || authService.isStudent()">
+    
       <div class="container">    
         <div>
           <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
@@ -11,7 +11,6 @@
         </video/>
         </div>
       </div>
-    </div>
   </div>
    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
