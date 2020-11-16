@@ -9,3 +9,4 @@ node_modules
 bootstrap
 scripts
 package-lock.json
+/src/config
