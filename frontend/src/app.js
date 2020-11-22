@@ -109,7 +109,7 @@ export class App {
                     roles: ["admin", "coach", "student"]
                 }
             },
-            // Reset Password
+            // Search
             {
                 name: "search",
                 route: "buscar/:query",
