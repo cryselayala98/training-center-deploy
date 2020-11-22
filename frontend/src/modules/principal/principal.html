@@ -1,42 +1,16 @@
 <template>
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-     <a href=""
-       ><img src="./src/assets/img/logo-transparent.png" alt="" id="logo"
-     /></a>
-     <a class="title" href="#">Training Center</a>
-     <button
-       class="navbar-toggler"
-       type="button"
-       data-toggle="collapse"
-       data-target="#navbarSupportedContent"
-       aria-controls="navbarSupportedContent"
-       aria-expanded="false"
-       aria-label="Toggle navigation"
-     >
-       <span class="navbar-toggler-icon"></span>
-     </button>
- 
-     <div class="collapse navbar-collapse" id="menu">
-       <ul class="navbar-nav mr-auto">
-         <li class="nav-item active">
-           <a class="nav-link" id="navbar" href="home.html"
-             >Home <span class="sr-only">(current)</span></a
-           >
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" id="navbar" href="#">Registro</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" id="navbar" href="login.html">Login</a>
-         </li>
-       </ul>
-     </div>
-   </nav>
- <div>
-   <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
-   <source src="https://drive.google.com/file/d/1bOCd-6xMJbc8lfYu4JhAUpc5gY2n1gJE/view?usp=sharing" type="video/mp4" />
- </video/>
- </div>
+  <require from="../../../resources/elements/filter"></require>
+  <require from="../../../resources/elements/paginator"></require>
+  <div slot="content" class="body-slot">
+      <router-view></router-view>
+      <div class="container">    
+        <div>
+          <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+          <source src="https://drive.google.com/file/d/1bOCd-6xMJbc8lfYu4JhAUpc5gY2n1gJE/view?usp=sharing" type="video/mp4" />
+        </video/>
+        </div>
+      </div>
+  </div>
    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
  

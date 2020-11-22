@@ -2,7 +2,7 @@
 
 Repositorio para el despliegue en modo producción de la plataforma UFPS Training center.
 
-## Requisitos 
+## Requisitos
 
 - Docker CE
 - Docker compose
@@ -55,14 +55,14 @@ sudo docker run -d -i -v ${FILES}:/files --name <nombre-contenedor> <nombre-imag
 
 El proyecto UFPS Training Center cuenta con los siguientes repositorios e imagenes docker:
 
-| Contenedor  | Imagen base |
-| ------------- | ------------- |
-| cppSandbox  | cpp_image  |
-| javaSandbox  | java_image  |
-| pythonSandbox  | python_image  |
-| mariaDB  | mariadb:10.2  |
-| training-center-backend  | backend  |
-| training-center-frontend  | frontend  |
+| Contenedor               | Imagen base  |
+| ------------------------ | ------------ |
+| cppSandbox               | cpp_image    |
+| javaSandbox              | java_image   |
+| pythonSandbox            | python_image |
+| mariaDB                  | mariadb:10.2 |
+| training-center-backend  | backend      |
+| training-center-frontend | frontend     |
 
 ## Despliegue en modo desarrollo
 
@@ -77,12 +77,10 @@ Cada uno de estos cuenta con sus propias instrucciones de instalación.
 
 El proyecto se encuentra desplegado en [ufpstrainingcenter.com](http://ufpstrainingcenter.com/#/iniciar-sesion)
 
-Para más información acerca del proyecto, por favor visitar nuestra [documentación oficial](http://ufpstrainingcenter.com/anexos/) 
+Para más información acerca del proyecto, por favor visitar nuestra [documentación oficial](http://ufpstrainingcenter.com/anexos/)
 
 Para más información del grupo de estudio por favor visitar nuestros [repositorios](https://github.com/ProgramacionCompetitivaUFPS)
 
-
 docker exec -it training-center-backend /bin/bash
-
 
 Este proyecto fue construido con mucho :heart: y Javascript por [Melissa](https://github.com/Meyito) y [Gerson](https://github.com/GersonLazaro)
