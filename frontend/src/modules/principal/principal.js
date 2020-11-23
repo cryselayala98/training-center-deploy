@@ -1,29 +1,29 @@
-import { inject } from 'aurelia-framework'
-import { Router } from 'aurelia-router'
-
-/**
- * Principal(Module)
- * Módulo encargado de mostrar las opciones de aprendizajes y entrenamiento:
- * Training Center University y Training Center High School
- * @export
- * @class Principal
- */
-
-// dependencias a inyectar: 
-// servicio de Router (Router)
-@inject(Router)
 export class Principal {
-
-
     /**
-     * Crea una instancia de Principal.
-     * @param {service} routerService - Servicio de enrutamiento
+     * Se encarga del enrutamiento dentro de la aplicación
+     * @param {any} config - Configuración de la aplicación
+     * @param {any} router - Enrutador principal de la aplicación
      */
-
-    constructor(routerService) {
-
-        this.routerService = routerService
-
+    configureRouter(config, router) {
+        config.map([{
+                route: '',
+                name: 'principal-index',
+                moduleId: 'modules/principal/principal-index/principal-index',
+                title: 'Training center Principal',
+                settings: {
+                    roles: ['admin', 'coach', 'student']
+                }
+            },
+            {
+                name: 'high-school',
+                route: 'colegios',
+                moduleId: 'modules/principal/principal-high-school/principal-high-school',
+                title: 'Training center High School - Principal',
+                settings: {
+                    roles: ['admin', 'coach', 'student']
+                }
+            }
+        ])
+        this.router = router
     }
-
 }

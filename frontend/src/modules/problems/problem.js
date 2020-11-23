@@ -6,7 +6,7 @@ export class Problem {
      */
     configureRouter(config, router) {
         config.map([{
-                route: ':label', //tc or tchs
+                route: '', //tc or tchs
                 name: 'problems',
                 moduleId: 'modules/problems/general-problems/general-problems',
                 title: 'Problemas',

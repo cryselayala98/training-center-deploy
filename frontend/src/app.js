@@ -102,7 +102,6 @@ export class App {
                 name: "principal",
                 route: "principal",
                 moduleId: "./modules/principal/principal",
-                title: "Inicio",
                 layoutView: "./layouts/logged.html",
                 nav: true,
                 settings: {
