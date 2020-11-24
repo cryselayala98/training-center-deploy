@@ -180,7 +180,7 @@ export class App {
             },
             {
                 name: "material",
-                route: ["materials", "materials/:id"],
+                route: ["materiales"],
                 moduleId: "./modules/material/material",
                 layoutView: "./layouts/logged.html",
                 nav: true,
@@ -188,6 +188,16 @@ export class App {
                     roles: ["admin", "coach", "student", "visitor"]
                 }
             },
+            /*{
+                    name: "material",
+                    route: ["materials", "materials/:id"],
+                    moduleId: "./modules/material/material",
+                    layoutView: "./layouts/logged.html",
+                    nav: true,
+                    settings: {
+                        roles: ["admin", "coach", "student", "visitor"]
+                    }
+                },*/
             {
                 name: "public-material",
                 route: ["material-publico"],

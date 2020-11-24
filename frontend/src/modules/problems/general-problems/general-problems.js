@@ -16,11 +16,6 @@ import { Alert, Auth, Problems } from 'services/services'
 // servicio de Router (Router)
 @inject(Alert, Auth, Problems, Router)
 export class GeneralProblems {
-    activate(params, routeConfig) {
-        this.routeConfig = routeConfig
-        this.label = params.label //label: tc university o high school
-        this.getProblems()
-    }
 
     /**
      * Crea una instancia de GeneralProblems.
