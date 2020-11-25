@@ -40,15 +40,14 @@ export class App {
         config.options.root = "/";
         config.map([{
                 route: "",
-                redirect: "problemas"
+                redirect: "principal"
             },
-            //Home --->NUEVOO
+            //Home
             {
                 name: "home",
                 route: "bienvenido",
                 moduleId: "./modules/home/home",
                 title: "Bienvenidos a Training Center",
-                //layoutView: "./layouts/not-logged.html",
                 settings: {
                     roles: ["visitor"]
                 }
@@ -103,13 +102,13 @@ export class App {
                 name: "principal",
                 route: "principal",
                 moduleId: "./modules/principal/principal",
-                layoutView: "./layouts/not-logged.html",
+                layoutView: "./layouts/logged.html",
                 nav: true,
                 settings: {
-                    roles: ["visitor"]
+                    roles: ["admin", "coach", "student"]
                 }
             },
-            // Reset Password
+            // Search
             {
                 name: "search",
                 route: "buscar/:query",
@@ -181,7 +180,7 @@ export class App {
             },
             {
                 name: "material",
-                route: ["materials", "materials/:id"],
+                route: ["materiales"],
                 moduleId: "./modules/material/material",
                 layoutView: "./layouts/logged.html",
                 nav: true,
@@ -189,6 +188,16 @@ export class App {
                     roles: ["admin", "coach", "student", "visitor"]
                 }
             },
+            /*{
+                    name: "material",
+                    route: ["materials", "materials/:id"],
+                    moduleId: "./modules/material/material",
+                    layoutView: "./layouts/logged.html",
+                    nav: true,
+                    settings: {
+                        roles: ["admin", "coach", "student", "visitor"]
+                    }
+                },*/
             {
                 name: "public-material",
                 route: ["material-publico"],
